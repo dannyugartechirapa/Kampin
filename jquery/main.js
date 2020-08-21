@@ -9,10 +9,7 @@ fetch('consultas.php',{
 
 })
 .then( res => res.json())
-.then(  dato =>{
-    console.log(dato);
-        
-})
-
+.then(  dato =>console.log(dato) )
+.catch(error => console.log(error.message) )
 
 })
