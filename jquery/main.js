@@ -3,7 +3,7 @@ var formulario =document.getElementById('formulario');
 formulario.addEventListener('submit',function(e){
 e.preventDefault();
 var datos= new FormData(formulario);
-fetch('consultas.php',{
+fetch('php/consultas.php',{
         method: 'POST',
         body:   datos
 
