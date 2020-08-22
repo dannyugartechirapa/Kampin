@@ -19,6 +19,28 @@ main {
     border-radius: 5px;
 
 }
+#tabla_usuarios{
+
+    background-color: white;
+    float: left;
+    margin: 5%;
+    padding: 10px;
+    height: 300px;
+    width: 50%;
+    border-radius: 5px;
+
+}
+table {
+    border: 1px solid;
+ 
+}
+th{
+    border: 1px solid;
+    width: 5%;
+}
+td{
+    border: 1px solid;
+}
 nav {
     padding: 5PX;
     background-color: cadetblue;
