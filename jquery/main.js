@@ -9,7 +9,27 @@ fetch('php/consultas.php',{
 
 })
 .then( res => res.json())
-.then(  dato =>console.log(dato) )
-.catch(error => console.log(error.message) )
-
-})
+.then(  dato =>{ 
+        //Recorremos el array con un for each
+        for(var clave in dato) {//numero de registros
+            var tabla=$('<tr/>',{'id':'tr'+clave});//filas
+             $('#tb').append(tabla);
+            for(columnas in dato[clave]) {//para recorer los datos
+                var columna=$('<td/>',{'id':'td'+clave} );//columnas
+                var tbtx1= document.createTextNode(dato[clave][columnas]);
+                columna.append(tbtx1);
+                $('#tr'+clave).append(columna);
+                                        }
+                                    }         
+        })
+        .catch( error=> console.log(error.message) )
+        })
+//--------------------para canchas deportivas-------------------------------------------
+        
+         $(document).ready(function () {
+             $('#usuario').click(function (e) { 
+                 e.preventDefault();
+                 $('#main').load("usuario.html") ;
+             });
+         });
+        
