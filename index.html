@@ -20,19 +20,35 @@
             <form id="formulario">
                 <section id="cliente">
                     <h1>Datos del Cliente</h1><br>
-                     <input  type="text" placeholder="idcliente" id="idclie" name="idclie"><br><br>
-                     <input type="text" placeholder="Nombre" autofocus id="nombre"><br><br>
-                     <input type="text" placeholder="Apellido"><br><br>
-                     <input type="text" placeholder="Celular"><br><br>
-                     <input type="text" placeholder="DNI"><br><br>
+                    <input  type="text" placeholder="idcliente"  name="idclie_u"><br><br>
+                    <input type="text" placeholder="Nombre" autofocus name="nombre_u" ><br><br>
+                    <input type="text" placeholder="Apellido" name="apellido_u"><br><br>
+                    <input type="text" placeholder="Celular" name="celular_u"><br><br>
+                    <input type="text" placeholder="DNI" name="dni_u"><br><br>
+                    <input name="opcion" value="1" hidden><br><br>
+                    <input id="enviar" type="submit"  value="enviar" >
                 </section>                
-                <input id="enviar" type="submit"  value="enviar" >
-           
-        
-           
             </form>    
-          
+            <div id="tabla_usuarios">
+                <table id="tb">
+                    <caption>USUARIOS REGISTRADOS</caption>
+                        <tr>
+                            
+                            <th>Id del Cliente</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Celular</th>
+                           
+                        </tr>
+                        <tr > 
+                            <!--    valores optenidos de una consulta-->
+                           
+                           
+                        </tr>
+                </table>
+           </div> 
     </main>
+
 
 
 
