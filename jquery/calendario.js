@@ -40,7 +40,21 @@ fetch('calendario.php',{
         pp=0;
         if(cont>dato.days) break;      
     }
-    })
+    if(dato.boolean==true){
+        for(var i=0;i<dato.reserva.length;i++){
+            for(var j=0;j<dato.cliente.length;j++){
+                if(dato.reserva[i][4]==dato.cliente[j][0]) {
+                    console.log(dato.cliente[j][1]);
+                    console.log(dato.reserva[i][6]);
+                    $('#td'+dato.reserva[i][6]).append("<br>"+dato.cliente[j][1]);
+                 
+                }
+                
+            }
+        }
+        }
+
+})
     .catch( error=> console.log(error.message) );
 }
 
