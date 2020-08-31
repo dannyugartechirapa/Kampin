@@ -1,7 +1,7 @@
-var formulario =document.getElementById('formulario');
 
 formulario.addEventListener('submit',function(e){
 e.preventDefault();
+var formulario =document.getElementById('formulario');
 var datos= new FormData(formulario);
 fetch('php/consultas.php',{
         method: 'POST',
@@ -25,11 +25,11 @@ fetch('php/consultas.php',{
         .catch( error=> console.log(error.message) )
         })
 //--------------------para canchas deportivas-------------------------------------------
-        
-         $(document).ready(function () {
-             $('#usuario').click(function (e) { 
-                 e.preventDefault();
-                 $('#main').load("usuario.html") ;
+
+         
+ $('#calendario').click(function (e) { 
+        e.preventDefault();
+        $('#main').load("calendario.html") ;
              });
-         });
+         
         

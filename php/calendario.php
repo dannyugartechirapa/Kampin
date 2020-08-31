@@ -1,4 +1,5 @@
 <?php
+include_once("parametros_conexion.php");
 $mes= $_POST['x'];
 $year=2020;
 

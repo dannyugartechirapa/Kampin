@@ -1,7 +1,9 @@
 <?php
 include_once("parametros_conexion.php");
 $conexion = new mysqli($hn, $un, $pw, $db);
-if($conexion){
+
+$opcion=$_POST['opcion'];
+switch($opcion){
     case 1://para reguistrar usuarios y visulizar registros de usuarios
         $i=$_POST['idclie_u'];
         $n=$_POST['nombre_u'];
@@ -35,8 +37,5 @@ if($conexion){
    break;
 
 
-}else{
-
-    return json_encode ("No hay conexion");
 }
 ?>
