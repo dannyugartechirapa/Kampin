@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 include_once("parametros_conexion.php");
 $conexion = new mysqli($hn, $un, $pw, $db);
 $opcion=$_POST['opcion'];
