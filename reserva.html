@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" id="reservar1" >
+            <h4>RESERVA</h4>
+            <div class="row"> 
+                    <div class="col-2">
+                            <div class="form-group">
+                                <label for="">ID de reserva</label>
+                                <input type="text" name="idreserva" class="form-control" id="idreserva">
+                            </div>
+                    </div>         
+                    <div class="col-2">
+                            <div class="form-group" >
+                                <label for="">ID de usuario</label>
+                                <select class="custom-select " name="idusuario" id="usuario"> 
+                                </select>
+                             
+                            </div>
+                    </div>
+                    <div c  lass="col-2">                            
+                            <div class="form-group">
+                                <label for="">ID de cliente</label>
+                                <select class="custom-select " name="idcliente" id="cliente"> 
+                                </select>
+                                
+                            </div>
+                    </div>
+                    <div class="col-2">
+                            <div class="form-group">
+                                 <label for="">Adelanto</label>:<br> 
+                                    <input type="text" name="adelanto" class="form-control">
+                                    
+                            </div>
+                    </div>
+                    <div class="col-2">
+                            <div class="form-group">
+                                <label for="">Falta</label>
+                                <input type="text" name="falta" class="form-control">
+                            </div>
+                    </div>
+                    <div class="col-2">
+                            <div class="form-group">
+                                <label for="">Total</label>
+                                <input type="text" name="total" class="form-control">
+                            </div>
+                    </div>
+                    <div class="col-2">
+                            <div class="form-group">
+                                <label for="">Cancelado</label>
+                                <input type="text" name="cancelado" class="form-control">
+                            </div>     
+                    </div>    
+                    
+            </div>    
+            <h4>TIEMPO DE RESERVA</h4>    
+            <div class="row">
+                    <div class="col-2">
+                        <label for="">ID de cancha</label>
+                        <select class="custom-select " name="idcancha" >
+                            <option selected>Deporte</option>
+                            <option value="1">Volleybal</option>
+                            <option value="2">Futbol</option>
+                            <option value="3">basketball</option>
+                          </select>
+                    </div>  
+                    <div class="col-2">
+                        <label for="">Numero de cancha</label>
+                        <input type="text" name="ncancha"  class="form-control">
+                    </div>                                  
+                    <div class="col-2">
+                        <label for="">Hora de Inicio</label>
+                        <input type="time" name="hinicio" class="form-control">
+                    </div>                          
+                    <div class="col-2">
+                        <label for="">Hora Final</label>
+                        <input type="time" name="hfinal" class="form-control">
+                    </div> 
+                    <div class="col-2">
+                        <label for="">Total de hora</label>
+                        <input type="text" name="totalhoras" class="form-control">
+                    </div>                            
+                    <div class="col-2">
+                        <label for="">Fecha</label>
+                        <input type="datetime-local" name="fechat" class="form-control">
+                    </div>                          
+                    <div class="col-2">
+                        <label for="">Costo</label>
+                        <input type="text" name="costo" class="form-control">
+                    </div>                                                   
+            </div>
+            <br>
+            
+                <input type="submit" class="form-group" >
+                <input type="text" name="opcion" value="3" hidden>
+        </form>      
+    </div>
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="jquery/reserva.js"></script>
+    
+</body>
+</html>
